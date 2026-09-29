@@ -67,7 +67,7 @@ void binaryIndexedTree::insert_node(int a){
     }
 
 }
-binaryIndexedTree::calculateLeftSize(node* root_sub_tree) {
+int binaryIndexedTree::calculateLeftSize(node* root_sub_tree) {
 
     int number = 1;
     if(root_sub_tree == NULL) {
@@ -79,7 +79,7 @@ binaryIndexedTree::calculateLeftSize(node* root_sub_tree) {
     }
 
 }
-binaryIndexedTree::searchIndex(node* root_, int index) {
+int binaryIndexedTree::searchIndex(node* root_, int index) {
 
     if(index == root_->left_size) {
         return root_->value;
